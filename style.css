@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@300;400;500;700&display=swap');
+
+
+
+
+
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #faebe4;
+}
+
+.input-1{
+    position: absolute;
+    border-radius: 10px;
+    top: 40px;
+    right: 29px;
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(242,204,186,255);
+     color: #f1bea8;;
+    border: none;
+    background-color: whitesmoke;
+    outline: none;
+    text-align: end;
+}
+
+
+
+
+.input-2{
+    width: 330px;
+    height: 100px;
+    position: absolute;
+    top: 80px;
+    border-radius: 8px;
+    border: none;
+    background-color: #feae8a;
+    box-shadow: -1px 24px 0px -18px rgba(254,174,138,0.5),-2px 58px 0px -47px rgba(254,174,138,0.3);
+    color: white;
+    font-size: 40px;
+    font-weight:bold;
+    background: rgb(237,192,172);
+    background: linear-gradient(90deg, rgba(237,192,172,1) 7%, rgba(254,174,138,1) 51%);
+    outline: none;
+    text-align: end;
+}
+
+.input-2:hover{
+    transition:  0.3s ease-in-out;
+    box-shadow: 1px 15px 39px -11px rgba(254,174,138,0.75), -1px 24px 0px -18px rgba(254,174,138,0.5), -2px 58px 0px -47px rgba(254,174,138,0.3);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+.input-container{
+    display: grid;
+    place-items: center;
+}
+
+
+.buttons{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+height: 400px;
+max-width: 360px;
+margin: 210px auto ;
+}
+
+.button{
+    font-size: 20px;
+    font-weight: 510;
+    background-color: white;
+    border: none;
+}
+
+.button:hover{
+    background-color: gainsboro;
+    transition: 0.4s;
+    color:red;
+    cursor: pointer;
+}
+
+.fa-backspace{
+    color: #f1bea8;
+}
+
+.equal{
+    grid-column: 4;
+    grid-row: 4/6;
+    background-color: rgba(255,247,240,255);
+    color: #f1bea8;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+}
+
+.equal:hover{
+    color: red;
+    background-color: whitesmoke;
+    transition: 0.5s ease-in-out;
+    cursor:pointer;
+}
+
+.calculator{
+    position: relative;
+    border: 4px solid rgba(181,157,136,255);
+    border-radius: 30px;
+    width: 390px;
+    min-width: 300px;
+    height: 650px;
+    background-color: white;
+    box-shadow: 3px 1px 26px 16px rgba(245,227,219,1);
+}
